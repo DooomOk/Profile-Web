@@ -1,0 +1,689 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(248, 200, 230);
+  width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat;
+   background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 2000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3Cfilter id=%22c%22 x=%22-200%25%22 y=%22-200%25%22 width=%22500%25%22 height=%22500%25%22%3E%3CfeGaussianBlur in=%22SourceGraphic%22 stdDeviation=%2220%22%2F%3E%3C%2Ffilter%3E%3Cfilter id=%22a%22 x=%22-100%25%22 y=%22-100%25%22 width=%22300%25%22 height=%22300%25%22%3E%3CfeGaussianBlur in=%22SourceGraphic%22 stdDeviation=%2210%22%2F%3E%3C%2Ffilter%3E%3C%2Fdefs%3E%3Cpath fill=%22%23000a0e%22 d=%22M0 0h2000v1000H0z%22%2F%3E%3Cellipse cx=%22187.428%22 cy=%2244.074%22 rx=%223.67%22 ry=%223.384%22 fill=%22%23fff%22 opacity=%22.076%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%22187.428%22 cy=%2244.074%22 rx=%221.795%22 ry=%221.692%22 fill=%22%23fff%22 opacity=%22.076%22%2F%3E%3Cellipse cx=%22352.745%22 cy=%22197.518%22 rx=%224.808%22 ry=%224.696%22 fill=%22%23fff%22 opacity=%22.217%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%22352.745%22 cy=%22197.518%22 rx=%222.612%22 ry=%222.348%22 fill=%22%23fff%22 opacity=%22.217%22%2F%3E%3Cellipse cx=%22975.811%22 cy=%22140.593%22 rx=%222.941%22 ry=%222.909%22 fill=%22%23fff%22 opacity=%22.17%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%22975.811%22 cy=%22140.593%22 rx=%221.736%22 ry=%221.455%22 fill=%22%23fff%22 opacity=%22.17%22%2F%3E%3Cellipse cx=%221033.857%22 cy=%22166.787%22 rx=%223.544%22 ry=%223.433%22 fill=%22%23fff%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%221033.857%22 cy=%22166.787%22 rx=%221.788%22 ry=%221.717%22 fill=%22%23fff%22 opacity=%22.552%22%2F%3E%3Cellipse cx=%221549.615%22 cy=%22101.701%22 rx=%224.707%22 ry=%224.299%22 fill=%22%23fff%22 opacity=%22.101%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%221549.615%22 cy=%22101.701%22 rx=%222.539%22 ry=%222.149%22 fill=%22%23fff%22 opacity=%22.101%22%2F%3E%3Cellipse cx=%221704.741%22 cy=%22121.267%22 rx=%225.669%22 ry=%225.317%22 fill=%22%23fff%22 opacity=%22.329%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%221704.741%22 cy=%22121.267%22 rx=%223.067%22 ry=%222.658%22 fill=%22%23fff%22 opacity=%22.329%22%2F%3E%3Cellipse cx=%2248.795%22 cy=%22352.508%22 rx=%223.152%22 ry=%222.963%22 fill=%22%23fff%22 opacity=%22.177%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%2248.795%22 cy=%22352.508%22 rx=%221.7%22 ry=%221.482%22 fill=%22%23fff%22 opacity=%22.177%22%2F%3E%3Cellipse cx=%22532.443%22 cy=%22378.301%22 rx=%224.153%22 ry=%223.92%22 fill=%22%23fff%22 opacity=%22.19%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%22532.443%22 cy=%22378.301%22 rx=%222.063%22 ry=%221.96%22 fill=%22%23fff%22 opacity=%22.19%22%2F%3E%3Cellipse cx=%22959.095%22 cy=%22362.129%22 rx=%223.366%22 ry=%223.332%22 fill=%22%23fff%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%22959.095%22 cy=%22362.129%22 rx=%221.835%22 ry=%221.666%22 fill=%22%23fff%22 opacity=%22.548%22%2F%3E%3Cellipse cx=%221270.515%22 cy=%22379.436%22 rx=%224.327%22 ry=%224.082%22 fill=%22%23fff%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%221270.515%22 cy=%22379.436%22 rx=%222.393%22 ry=%222.041%22 fill=%22%23fff%22 opacity=%22.777%22%2F%3E%3Cellipse cx=%221421.759%22 cy=%22352.394%22 rx=%223.716%22 ry=%223.625%22 fill=%22%23fff%22 opacity=%22.318%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%221421.759%22 cy=%22352.394%22 rx=%222.081%22 ry=%221.813%22 fill=%22%23fff%22 opacity=%22.318%22%2F%3E%3Cellipse cx=%221850.408%22 cy=%22295.151%22 rx=%223.899%22 ry=%223.405%22 fill=%22%23fff%22 opacity=%22.247%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%221850.408%22 cy=%22295.151%22 rx=%221.793%22 ry=%221.702%22 fill=%22%23fff%22 opacity=%22.247%22%2F%3E%3Cellipse cx=%2254.952%22 cy=%22546.38%22 rx=%225.081%22 ry=%224.854%22 fill=%22%23fff%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%2254.952%22 cy=%22546.38%22 rx=%222.84%22 ry=%222.427%22 fill=%22%23fff%22 opacity=%22.944%22%2F%3E%3Cellipse cx=%22569.747%22 cy=%22470.119%22 rx=%223.961%22 ry=%223.637%22 fill=%22%23fff%22 opacity=%22.131%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%22569.747%22 cy=%22470.119%22 rx=%222.142%22 ry=%221.819%22 fill=%22%23fff%22 opacity=%22.131%22%2F%3E%3Cellipse cx=%22738.94%22 cy=%22419.887%22 rx=%224.373%22 ry=%224.344%22 fill=%22%23fff%22 opacity=%22-.008%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%22738.94%22 cy=%22419.887%22 rx=%222.447%22 ry=%222.172%22 fill=%22%23fff%22 opacity=%22-.008%22%2F%3E%3Cellipse cx=%221101.223%22 cy=%22414.065%22 rx=%224.445%22 ry=%224.104%22 fill=%22%23fff%22 opacity=%22.053%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%221101.223%22 cy=%22414.065%22 rx=%222.542%22 ry=%222.052%22 fill=%22%23fff%22 opacity=%22.053%22%2F%3E%3Cellipse cx=%221504.199%22 cy=%22418.378%22 rx=%225.011%22 ry=%224.649%22 fill=%22%23fff%22 opacity=%22.281%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%221504.199%22 cy=%22418.378%22 rx=%222.718%22 ry=%222.324%22 fill=%22%23fff%22 opacity=%22.281%22%2F%3E%3Cellipse cx=%221822.096%22 cy=%22453.904%22 rx=%224.131%22 ry=%223.89%22 fill=%22%23fff%22 opacity=%22.183%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%221822.096%22 cy=%22453.904%22 rx=%222.414%22 ry=%221.945%22 fill=%22%23fff%22 opacity=%22.183%22%2F%3E%3Cellipse cx=%22309.721%22 cy=%22778.145%22 rx=%223.689%22 ry=%223.202%22 fill=%22%23fff%22 opacity=%22-.233%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%22309.721%22 cy=%22778.145%22 rx=%221.802%22 ry=%221.601%22 fill=%22%23fff%22 opacity=%22-.233%22%2F%3E%3Cellipse cx=%22577.585%22 cy=%22630.809%22 rx=%224.219%22 ry=%224.18%22 fill=%22%23fff%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%22577.585%22 cy=%22630.809%22 rx=%222.167%22 ry=%222.09%22 fill=%22%23fff%22 opacity=%22.814%22%2F%3E%3Cellipse cx=%22748.821%22 cy=%22617.39%22 rx=%223.611%22 ry=%223.562%22 fill=%22%23fff%22 opacity=%22.497%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%22748.821%22 cy=%22617.39%22 rx=%222.042%22 ry=%221.781%22 fill=%22%23fff%22 opacity=%22.497%22%2F%3E%3Cellipse cx=%221221.831%22 cy=%22792.333%22 rx=%223.683%22 ry=%223.615%22 fill=%22%23fff%22 opacity=%22.221%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%221221.831%22 cy=%22792.333%22 rx=%222.123%22 ry=%221.808%22 fill=%22%23fff%22 opacity=%22.221%22%2F%3E%3Cellipse cx=%221546.491%22 cy=%22638.308%22 rx=%224.595%22 ry=%224.1%22 fill=%22%23fff%22 opacity=%22-.159%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%221546.491%22 cy=%22638.308%22 rx=%222.363%22 ry=%222.05%22 fill=%22%23fff%22 opacity=%22-.159%22%2F%3E%3Cellipse cx=%221816.907%22 cy=%22788.014%22 rx=%225.416%22 ry=%225.29%22 fill=%22%23fff%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%221816.907%22 cy=%22788.014%22 rx=%222.751%22 ry=%222.645%22 fill=%22%23fff%22 opacity=%22.634%22%2F%3E%3Cellipse cx=%22114.6%22 cy=%22914.993%22 rx=%225.247%22 ry=%224.828%22 fill=%22%23fff%22 opacity=%22-.094%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%22114.6%22 cy=%22914.993%22 rx=%222.904%22 ry=%222.414%22 fill=%22%23fff%22 opacity=%22-.094%22%2F%3E%3Cellipse cx=%22592.033%22 cy=%22933.282%22 rx=%222.929%22 ry=%222.795%22 fill=%22%23fff%22 opacity=%22.127%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%22592.033%22 cy=%22933.282%22 rx=%221.507%22 ry=%221.398%22 fill=%22%23fff%22 opacity=%22.127%22%2F%3E%3Cellipse cx=%22998.153%22 cy=%22895.6%22 rx=%223.621%22 ry=%223.588%22 fill=%22%23fff%22 opacity=%22.091%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%22998.153%22 cy=%22895.6%22 rx=%222.023%22 ry=%221.794%22 fill=%22%23fff%22 opacity=%22.091%22%2F%3E%3Cellipse cx=%221061.577%22 cy=%22811.042%22 rx=%225.508%22 ry=%225.409%22 fill=%22%23fff%22 opacity=%22.009%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%221061.577%22 cy=%22811.042%22 rx=%223.057%22 ry=%222.704%22 fill=%22%23fff%22 opacity=%22.009%22%2F%3E%3Cellipse cx=%221385.221%22 cy=%22819.806%22 rx=%225.775%22 ry=%225.348%22 fill=%22%23fff%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%221385.221%22 cy=%22819.806%22 rx=%223.026%22 ry=%222.674%22 fill=%22%23fff%22 opacity=%22.76%22%2F%3E%3Cellipse cx=%221974.484%22 cy=%22914.384%22 rx=%223.123%22 ry=%222.908%22 fill=%22%23fff%22 opacity=%22.452%22 filter=%22url(%23a)%22%2F%3E%3Cellipse cx=%221974.484%22 cy=%22914.384%22 rx=%221.706%22 ry=%221.454%22 fill=%22%23fff%22 opacity=%22.452%22%2F%3E%3Cg transform=%22rotate(-67.614 773.26 -1051.808)%22%3E%3Cdefs%3E%3ClinearGradient id=%22b%22 x1=%220%22 y1=%221%22 x2=%22221.208%22 y2=%221%22 gradientUnits=%22userSpaceOnUse%22%3E%3Cstop stop-color=%22%23fa0ebe%22%2F%3E%3Cstop offset=%22.3%22 stop-color=%22%23850efa%22 stop-opacity=%22.1%22%2F%3E%3Cstop offset=%22.7%22 stop-color=%22%23850efa%22 stop-opacity=%220%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect x=%22-11.06%22 y=%22-12.5%22 width=%2288.483%22 height=%2225%22 rx=%2225%22 ry=%2225%22 fill=%22url(%23b)%22 filter=%22url(%23c)%22 opacity=%22.4%22%2F%3E%3Crect width=%22132.725%22 height=%228%22 rx=%228%22 ry=%228%22 fill=%22url(%23b)%22%2F%3E%3C%2Fg%3E%3Cg transform=%22rotate(-60.967 907.943 -954.082)%22 fill=%22url(%23b)%22%3E%3Crect x=%22-11.011%22 y=%22-12.5%22 width=%2288.086%22 height=%2225%22 rx=%2225%22 ry=%2225%22 filter=%22url(%23c)%22 opacity=%22.4%22%2F%3E%3Crect width=%22132.128%22 height=%228%22 rx=%228%22 ry=%228%22%2F%3E%3C%2Fg%3E%3Cg transform=%22rotate(-67.302 874.27 -652.18)%22 fill=%22url(%23b)%22%3E%3Crect x=%22-9.21%22 y=%22-12.5%22 width=%2273.682%22 height=%2225%22 rx=%2225%22 ry=%2225%22 filter=%22url(%23c)%22 opacity=%22.4%22%2F%3E%3Crect width=%22110.523%22 height=%228%22 rx=%228%22 ry=%228%22%2F%3E%3C%2Fg%3E%3Cg transform=%22rotate(-67.972 1146.361 -735.183)%22 fill=%22url(%23b)%22%3E%3Crect x=%22-9.378%22 y=%22-12.5%22 width=%2275.026%22 height=%2225%22 rx=%2225%22 ry=%2225%22 filter=%22url(%23c)%22 opacity=%22.4%22%2F%3E%3Crect width=%22112.539%22 height=%228%22 rx=%228%22 ry=%228%22%2F%3E%3C%2Fg%3E%3Cg transform=%22rotate(-67.997 1276.617 -544.178)%22 fill=%22url(%23b)%22%3E%3Crect x=%22-8.198%22 y=%22-12.5%22 width=%2265.588%22 height=%2225%22 rx=%2225%22 ry=%2225%22 filter=%22url(%23c)%22 opacity=%22.4%22%2F%3E%3Crect width=%2298.382%22 height=%228%22 rx=%228%22 ry=%228%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+
+.section__text .title {
+  color: rgb(160, 41, 152);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(255, 254, 254);
+}
+
+/* TRANSITION */
+
+a, .btn {
+  transition: all 300ms ease;
+}
+
+/* DEKSTOP NAV */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+  
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: rgb(160, 41, 152);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(255, 255, 255);
+  filter: drop-shadow(7px 7px 10px rgba(200, 71, 187, 0.619)); /* Added drop shadow */
+}
+
+.logo {
+  font-size: 2rem;
+  color: white;
+}
+
+.logo:hover {
+  cursor: default;
+  filter: drop-shadow(3px 3px 5px rgba(200, 71, 187, 0.619)); /* Added drop shadow */
+}
+
+/* HAMBURGER MENU*/
+
+#hamburger-nav {
+  display: none; 
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(255, 250, 250);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: rgb(248, 222, 243);
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+/* SECTIONS */
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* PROFILE SECTIONS */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+  filter: drop-shadow(0px 0px 20px rgba(200, 71, 187, 0.619)); /* Added drop shadow */
+}
+
+.section__text {
+  align-self: center;
+  text-emphasis: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  color: #fffefe;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0rem;
+}
+
+.section__text__p2 {
+  color: #fff8f8;
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  filter: drop-shadow(2px 2px 10px rgba(200, 71, 187, 0.619)); /* Added drop shadow */
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.icon {
+  width: 35px; /* Adjust as per your icon size */
+  height: 50px; /* Adjust as per your icon size */
+  transition: transform 0.3s; /* Added transition for transform */
+  filter: drop-shadow(2px 2px 4px rgba(200, 71, 187, 0.619)); /* Added drop shadow */
+}
+
+.linkedin:hover, .github:hover {
+  transform: scale(1.7); /* Increases the size slightly on hover */
+}
+
+
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-color-1:hover, 
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1, 
+.btn-color-2:hover {
+  background: rgb(248, 247, 248);
+  color: rgb(160, 41, 152);
+}
+ 
+.btn-color-2:hover {
+  background: rgb(248, 247, 248);
+  color: rgb(160, 41, 152);
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2:hover {
+  border: rgb(252, 231, 245) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* ABOUT SECTION */
+ 
+#about {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-containers {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-containers {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 1rem;
+}
+
+.arrow {
+  color: #b23fae;
+  align-items: center;
+  position: absolute;
+  border-radius: 10px;
+  right: -5rem;
+  bottom: 2.5rem;
+  width: 80px;
+  height: 60px;
+
+}
+
+#about h1 {
+  color:  rgb(160, 41, 152);;
+}
+.details-containers p {
+  color: black;
+}
+
+.details-containers {
+  padding: 1.5rem;
+  flex: 1;
+  background-color: rgb(255, 249, 249); /* Adjust the alpha value for transparency */
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-containers {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/* EXPERIENCE */
+
+#experience {
+  position: relative;
+}
+
+#experience h1 {
+  color: rgb(160, 41, 152);
+}
+
+.experience-sub-title {
+  color: rgb(48, 47, 47);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+article .icon {
+  cursor: default;
+}
+
+/* PROJECTS */
+
+#projects {
+  position: relative;
+}
+
+#projects h1 {
+  color: #b23fae;
+}
+
+.projb {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f9f9f9; /* Change color as needed */
+  color: #b23fae; /* Change color as needed */
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.projb:hover {
+  background-color: #000000; /* Change color as needed */
+}
+
+.projb  {
+  position: absolute;
+  width: 10rem;
+  height: auto;
+  z-index: 2;
+  margin-top: 13rem;
+  top: 50%; /* Adjust as needed to center vertically */
+  right: 43.5%; /* Adjust as needed to position horizontally */
+  transform: translate(0, -50%); /* Center the image vertically */
+}
+
+.details-container {
+  display: flex;
+  padding: 1.5rem;
+  flex: 1;
+  background-color: rgb(255, 249, 249); /* Adjust the alpha value for transparency */
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(0, 0, 0);
+  text-align: center;
+  width: 68rem;
+  align-items: center;
+  margin-left: 13rem;
+  margin-top: 2rem;
+}
+
+.details-container img {
+  border-radius: 2rem;
+  
+  z-index: 1;
+  width: 70rem; /* Change the width to your desired size */
+  height: 35rem; /* Change the height to your desired size */
+}
+
+
+/* CONTACT */
+
+#contacts {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.btn-message  {
+  width: 150px; /* Adjust the width as per your design */
+  padding: 10px; /* Adjust padding if needed */
+  height: 50px;
+  background-color: rgb(248, 200, 230);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 716px;
+  margin-top: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.btn-message:hover {
+  background-color: rgb(248, 200, 230);
+  color: #fff;
+}
+
+
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(4, 4, 4) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+  background-color: white;
+}
+
+.contact-info-upper-container a {
+  color: #d463c5;
+}
+
+#contacts h1 {
+  color: #b23fae;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2rem;
+}
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
+
+
+.message-container {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+
+
+.message-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.message-section textarea {
+    width: 500px;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background-color: #eae5ea;
+    font-size: 16px;
+    resize: none;
+  }
+
+  .hidden {
+    display: none;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 2px;
+    transform: translate(-50%, -50%);
+    background-color: rgb(206, 148, 197);
+    padding: 20px;
+    border: 1px solid #000000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.popup .btn {
+  margin-left: 53px;
+  margin-top: 20px;
+}
+
+.message-section .btn {
+  margin-top: 2rem;
+}
+
+
+
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  
+}
+
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+
+  #projects,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .aarow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #contacts,
+  footer {
+    height: 40vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1.25rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+}
+

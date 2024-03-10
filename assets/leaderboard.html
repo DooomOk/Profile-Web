@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            color: #fff; /* Set the default text color to white */
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin-top: -270px;
+            background-color: #251833; /* Keep the background color for the entire body */
+            background-size: cover;
+            background-position: center;
+            overflow: hidden; /* Prevent scrollbars */
+            position: relative; /* Set the body to relative positioning */
+        }
+
+        .container {
+            background: transparent; /* Set the container background to transparent */
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #555;
+        }
+
+        tr:hover {
+            background-color: #777;
+        }
+
+        /* Add this CSS to center the button at the bottom */
+        .tite {
+            margin-top: auto;
+            text-align: center;
+            
+            
+
+        }
+
+        #sample {
+            width: 60px;
+            height: 40px;
+            padding: 10px;
+            margin-top: 10px; /* Add some margin for spacing */
+            
+        }
+
+    </style>
+  
+</head>
+
+<body>
+    <?php
+include('database.php');
+// Assuming you have already connected to your database
+
+// Fetch data from your tables
+$query = "SELECT game_data.username, scores.points
+          FROM game_data
+          INNER JOIN scores ON game_data.user_id = scores.user_id
+          ORDER BY scores.points DESC"; // Assuming you want to order by points
+
+$result = mysqli_query($conn, $query);
+
+// Start building the HTML table
+$table = '<table>';
+$table .= '<thead><tr><th>Rank</th><th>Username</th><th>Points</th></tr></thead>';
+$table .= '<tbody>';
+
+$rank = 1;
+while ($row = mysqli_fetch_assoc($result)) {
+    $table .= '<tr>';
+    $table .= '<td>' . $rank++ . '</td>';
+    $table .= '<td>' . $row['username'] . '</td>';
+    $table .= '<td>' . $row['points'] . '</td>';
+    $table .= '</tr>';
+}
+
+$table .= '</tbody>';
+$table .= '</table>';
+
+// Output the HTML table
+echo $table;
+?>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            loadLeaderboard(); // Call the function when the page loads
+        });
+
+        function loadLeaderboard() {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "leaderboard.php", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    var data = JSON.parse(xhr.responseText);
+                    displayLeaderboard(data);
+                }
+            };
+            xhr.send();
+        }
+
+        function displayLeaderboard(data) {
+            var tbody = document.querySelector(".leaderboard-table");
+            tbody.innerHTML = ""; // Clear existing rows
+            data.forEach(function(row) {
+                var tr = document.createElement("tr");
+                tr.innerHTML = "<td>" + row.rank + "</td>" +
+                    "<td>" + row.username + "</td>" +
+                    "<td>" + row.points + "</td>";
+                tbody.appendChild(tr);
+            });
+        }
+    </script>
+
+</body>
+    
+
+    <div class="tite">
+    <a href="main_menu.php">
+        <button id="sample">Back</button>
+    </a>
+    </div>
+
+
+</html>
